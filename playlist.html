@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotify Clone — Playlist</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {background:#121212; color:#fff; font-family:'Segoe UI', sans-serif; margin:0; padding:0;}
+.container {padding:20px 40px;}
+.playlist-header {display:flex; align-items:center; gap:30px; margin-bottom:30px;}
+.playlist-header img {width:220px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.7);}
+.playlist-meta h2 {font-size:32px; margin-bottom:10px;}
+.playlist-meta p {color:#b3b3b3; margin-bottom:15px;}
+.controls button {padding:10px 20px; margin-right:10px; border:none; border-radius:8px; cursor:pointer; font-weight:700; transition:0.3s;}
+.controls button:first-child {background:#1DB954; color:#000;}
+.controls button:last-child {background:#282828; color:#fff;}
+.controls button:hover:first-child {background:#17a74a;}
+.controls button:hover:last-child {background:#3a3a3a;}
+.song-list {width:100%; border-collapse:collapse;}
+.song-list th, .song-list td {padding:12px; text-align:left;}
+.song-list th {color:#b3b3b3; border-bottom:1px solid #282828;}
+.song-list tr {border-bottom:1px solid #282828; transition:0.2s;}
+.song-list tr:hover {background:#1a1a1a;}
+.song-title {display:flex; flex-direction:column;}
+.song-title strong {font-weight:600;}
+.song-title span {color:#b3b3b3; font-size:14px;}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="playlist-header">
+    <img src="images/cover.jpg" alt="Playlist Cover">
+    <div class="playlist-meta">
+      <h2>Top Hits Playlist</h2>
+      <p>Curated by Spotify Clone · 50 songs · 3 hr 12 min</p>
+      <div class="controls">
+        <button>Play</button>
+        <button>Save</button>
+      </div>
+    </div>
+  </div>
+
+  <table class="song-list">
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Duration</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="song-title"><strong>Song One</strong><span>Artist A</span></td>
+      <td>3:12</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="song-title"><strong>Song Two</strong><span>Artist B</span></td>
+      <td>2:58</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="song-title"><strong>Song Three</strong><span>Artist C</span></td>
+      <td>4:05</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="song-title"><strong>Song Four</strong><span>Artist D</span></td>
+      <td>3:45</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="song-title"><strong>Song Five</strong><span>Artist E</span></td>
+      <td>3:01</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
